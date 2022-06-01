@@ -20,8 +20,10 @@ const CountrySelector = ({ value, handleOnChange, countries }) => {
           id: "country-selector",
         }}
       >
-        {countries.map((country) => (
-          <option value={country.ISO2.toLowerCase()}>{country.Country}</option>
+        {countries.map((country, index) => (
+          <option value={country.ISO2.toLowerCase()} key={index}>
+            {country.Country}
+          </option>
         ))}
       </NativeSelect>
       <FormHelperText>Lựa chọn quốc gia</FormHelperText>

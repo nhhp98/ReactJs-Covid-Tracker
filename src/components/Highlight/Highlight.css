@@ -1,0 +1,11 @@
+.wrapper-confirmed {
+  border-left: 5px solid #c9302c;
+}
+
+.wrapper-recovered {
+  border-left: 5px solid #28a745;
+}
+
+.wrapper-death {
+  border-left: 5px solid gray;
+}
